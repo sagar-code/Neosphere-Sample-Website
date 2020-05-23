@@ -1,0 +1,17 @@
+{
+  "name": "neo.1",
+  "version": "1.0.0",
+  "description": "Neostore webpage",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  },
+  "devDependencies": {
+    "prettier": "1.17.0"
+  },
+  "scripts": {
+    "compile:sass": "node-sass -w sass/main.scss dist/css/style.css --recursive --source-map-root dist/css/style.css --source-map-embed true"
+  },
+  "author": "code_monkey",
+  "license": "MIT"
+}

@@ -1,0 +1,163 @@
+.header {
+    color: $color-head-text;
+    font-weight: 400;
+
+    .custom-navbar {
+        background: #FFF;
+        box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1),
+            0 3px 1px 0 rgba(20, 23, 28, 0.1);
+        display: block;
+        position: relative;
+
+        &__box {
+            height: 6rem;
+            padding: 0 2rem;
+        }
+    }
+
+    .logo-part {
+        width: 25%;
+    }
+
+    .navbar-brand {
+        text-align: center;
+
+        &__img {
+            width: 40%;
+        }
+
+        &__text {
+            font-size: 1.3rem;
+            color: $color-text;
+            display: block;
+        }
+    }
+
+    .middle-part {
+        width: 45%;
+        font-size: 1.4rem;
+        margin-left: -12rem;
+
+        &__wrap {
+            display: -webkit-inline-box;
+        }
+    }
+
+    .category-part {
+        display: -webkit-inline-box;
+        padding: 1rem 2rem;
+        cursor: default;
+        font-size: 1.6rem;
+        color: $color-light-text-color;
+
+        &__icon {
+            color: $color-head-icon;
+            margin-right: 8px;
+        }
+    }
+
+    .search-part {
+        margin: 0 2.5rem;
+        width: 63rem;
+    }
+
+    .form {
+        display: flex;
+        position: relative;
+
+        input {
+            color: $color-text;
+        }
+
+        &__input {
+            width: 100%;
+            padding: 1rem;
+            border: none;
+            border-radius: .2rem;
+            background-color: #f2f3f5;
+
+            &:focus {
+                outline: none;
+                border: 1px solid rgba($color-black, .1);
+                transition: none;
+                background-color: $color-white;
+
+                &::-webkit-input-placeholder {
+                    color: $color-light-text-color;
+                }
+            }
+
+            &::-webkit-input-placeholder {
+                color: $color-primary-light;
+            }
+
+
+        }
+
+        &__search-btn {
+            font-size: 1.8rem;
+            color: $color-primary-light;
+            position: absolute;
+            right: 0;
+            height: 100%;
+
+
+            i {
+                padding: .5rem .6rem;
+            }
+
+            &:hover {
+                color: $color-white;
+                background: $color-primary-light;
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+            }
+        }
+    }
+
+    .right-part {
+        width: 30%;
+        font-size: 1.4rem;
+
+        &__wrap {
+            display: -webkit-inline-box;
+        }
+    }
+
+    .all-course,
+    .enquire {
+        font-size: 1.6rem;
+        padding: .6rem 3rem;
+        color: $color-light-text-color;
+        background: green;
+        color: white;
+        margin-right: 4rem;
+        border-radius: 2px;
+
+
+        &.btn-green {
+            background-color: $color-primary-light;
+        }
+
+        &.btn-yellow {
+            background-color: $color-secondary;
+        }
+
+        .header-text {
+            color: #FFF;
+            text-decoration: none;
+        }
+    }
+
+    .icon-part {
+        font-size: 2.3rem;
+
+        .icon {
+            color: $color-head-icon;
+
+            &:hover {
+                color: $color-primary-light;
+            }
+        }
+    }
+}

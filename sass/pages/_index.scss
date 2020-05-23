@@ -1,0 +1,234 @@
+.hero-section {
+    height: 50rem;
+
+    .wrapper {
+        &__img {
+            img {
+                height: 50rem;
+                object-fit: cover;
+                background-size: cover;
+            }
+        }
+    }
+}
+
+.info-section {
+    background: linear-gradient(-45deg,
+        rgb(71, 211, 90) 0,
+        rgb(26, 110, 30) 100%);
+    margin-bottom: 3.4rem;
+    text-align: center;
+    height: 8.4rem;
+
+    .info-wrapper {
+        display: inline-block;
+        padding-top: 0.5rem;
+
+        &:hover {
+            color: #ddd;
+        }
+
+
+        .info-icon {
+            color: $color-white;
+            font-size: 4.5rem;
+            margin-right: 1rem;
+            display: inline-block;
+
+            &:hover {
+                color: #ddd;
+            }
+        }
+
+        .info-text {
+            text-align: left;
+            font-size: 2rem;
+            color: $color-white;
+            display: inline-block;
+            vertical-align: text-bottom;
+
+            &:hover {
+                color: #ddd;
+            }
+        }
+    }
+}
+
+.courseTab-section {
+    margin-bottom: 3.4rem;
+
+    .courseTab-left {
+        background: $color-tab-bg;
+        padding: 8.5rem 3.2rem;
+        margin-left: 15rem;
+        text-align: justify;
+
+        &__head {
+            font-size: 2rem;
+            padding: 1rem 0;
+            // color: $color-head-text;
+
+            span {
+                color: $color-primary;
+            }
+        }
+
+        &__base {
+            font-size: 1.5rem;
+            color: $color-text;
+        }
+
+        &__more {
+            font-size: 1.6rem;
+            padding: 1rem 0;
+
+            .btn-link {
+                color: $color-primary-light;
+                text-decoration: none;
+
+                &:hover {
+                    color: $color-secondary;
+                }
+            }
+
+            .right-arrow {
+                display: inline-block;
+                margin-left: 0.5rem;
+
+                i {
+                    color: $color-secondary;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+
+    .courseTab-right {
+        section {
+            display: none;
+            padding: 20px 0 0;
+            border-top: 1px solid #abc;
+        }
+
+        input {
+            display: none;
+        }
+
+        label {
+            font-size: 1.6rem;
+            display: inline-block;
+            margin: 0 0 -1px;
+            padding: 11px 12px 8px 12px;
+            text-align: center;
+            color: #29303b;
+            // border: 1px solid transparent;
+        }
+
+        label:hover {
+            color: #789;
+            cursor: pointer;
+        }
+
+        input:checked+label {
+            color: $color-primary-light;
+            border-bottom: 5px solid #007791;
+        }
+
+        #tab1:checked~#content1,
+        #tab2:checked~#content2,
+        #tab3:checked~#content3,
+        #tab4:checked~#content4 {
+            display: block;
+        }
+    }
+}
+
+.specialCourses-section {
+    padding-left: 15rem;
+    margin-bottom: 3.4rem;
+    padding-right: 15rem;
+
+    .title {
+        line-height: 2.5;
+    }
+}
+
+.popularCourses-section {
+    padding-left: 15rem;
+    margin-bottom: 4rem;
+    padding-right: 15rem;
+
+    .title {
+        line-height: 2.5;
+    }
+}
+
+.video-section {
+    position: relative;
+    height: 38rem;
+    margin-top: 2rem;
+    margin-bottom: 4.2rem;
+    padding: 3rem 0;
+    border-top: 1rem solid #c7ea46;
+
+    background: #0b6623;
+
+    #my-video {
+        &:focus {
+            outline: none;
+            outline: auto;
+        }
+    }
+
+    .video-js {
+        vertical-align: top;
+        box-sizing: border-box;
+        color: #fff;
+        background-color: #000;
+        position: relative;
+        height: 31rem;
+        width: 54%;
+        padding: 0;
+        font-size: 10px;
+        line-height: 1;
+
+        background-image: linear-gradient(to right bottom, green, rgb(29, 179, 49));
+        box-shadow: 0px 0px 20px 1px rgba(77, 72, 72, 0.596);
+    }
+
+    .play-icon {
+        color: rgb(235, 222, 222);
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        i {
+            font-size: 4rem;
+        }
+    }
+}
+
+.testimonial-section {
+    padding-left: 15rem;
+    padding-right: 14.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.partners-section {
+    padding-left: 15rem;
+    padding-right: 15rem;
+    background: #f7f8fa;
+    margin: 2.8rem 0 4.2rem 0;
+
+    .title {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .partners-logo {
+        text-align: -webkit-center;
+        padding: 1rem 0 3rem 0;
+    }
+}

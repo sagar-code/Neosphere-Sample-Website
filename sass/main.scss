@@ -1,0 +1,20 @@
+@import "abstracts/variables";
+
+@import "base/animation";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/card";
+@import "components/dropdown";
+@import "components/testimonial";
+
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/navigation";
+
+@import "pages/index";
+
+@import "responsive/mainPage.scss";
+
+@import "vendors/owlCarousel.scss";
