@@ -4,7 +4,7 @@
   "description": "Neostore webpage",
   "main": "index.js",
   "dependencies": {
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.14.1"
   },
   "devDependencies": {
     "prettier": "1.17.0"
@@ -13,5 +13,13 @@
     "compile:sass": "node-sass -w sass/main.scss dist/css/style.css --recursive --source-map-root dist/css/style.css --source-map-embed true"
   },
   "author": "code_monkey",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sagar-code/Neosphere-Sample-Website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sagar-code/Neosphere-Sample-Website/issues"
+  },
+  "homepage": "https://github.com/sagar-code/Neosphere-Sample-Website#readme"
 }
